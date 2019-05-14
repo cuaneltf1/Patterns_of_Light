@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Light Patterns in Js</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #panel{
+                display: grid;
+                grid-template-columns: repeat(10, auto);
+                column-gap: 0px;
+            }
+            .item{
+                border: .1px solid rgba(125, 125, 125, 0.01);
+                width: 100%;
+                padding-top: 100%;
+            }  
+            
+            @media only screen and (max-width:1024px){
+                #panel{
+                    grid-template-columns: repeat(5, auto);
+                }
+            }
+            
+            @media only screen and (max-width:375px){
+                #panel{
+                    grid-template-columns: repeat(3, auto);
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="panel">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div id="glitch"></div>
+        
+        <script>
+            var myVar = setInterval(light, 1000);
+            
+            
+            var scan = document.getElementsByClassName("item");
+            
+            function light(){
+                    for( var i = 0; i < scan.length; ++i ){
+                        scan[i].style.backgroundColor = "white";
+                    };
+
+                    var a = Math.floor(Math.random() * 60);
+                    var b = Math.floor(Math.random() * 60);
+                    var c = Math.floor(Math.random() * 60);
+                    var d = Math.floor(Math.random() * 60);
+                    var e = Math.floor(Math.random() * 60);
+                    var f = Math.floor(Math.random() * 60);
+                    var g = Math.floor(Math.random() * 60);
+                    var h = Math.floor(Math.random() * 60);
+                    var i = Math.floor(Math.random() * 60);
+                    var j = Math.floor(Math.random() * 60); 
+                    var k = Math.floor(Math.random() * 60); 
+                    var l = Math.floor(Math.random() * 60); 
+
+                    scan[a].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[b].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[c].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[d].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[e].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[f].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[g].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[h].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[i].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[j].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[k].style.backgroundColor = "rgba(125,125,125,.75)"
+                    scan[l].style.backgroundColor = "rgba(125,125,125,.75)"
+
+            };
+        </script>
+
+    </body>
+</html>
